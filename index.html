@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculator-wrapper">
+            <div class="calculator">
+                <div class="theme-button-container">
+                    <button class="theme-button" id="theme-toggle">
+                        <span class="theme-text">🌙 Dark Mode</span>
+                    </button>
+                </div>
+
+              
+                <div class="tabs">
+                    <button class="tab active" data-tab="calculator" aria-label="Calculator tab">
+                        Calculator
+                    </button>
+                    <button class="tab" data-tab="history" aria-label="History tab">
+                        History
+                    </button>
+                </div>
+
+            
+                <div class="tab-content active" id="calculator-view">
+                    <form id="calculator-form">
+                   
+                        <div class="display" aria-live="polite" aria-atomic="true">
+                            <div class="display-expression" id="expression" aria-label="Current expression"></div>
+                            <label>
+                                <input type="text" id="display" name="display" aria-label="Calculator display" readonly tabindex="-1">
+                            </label>
+                        </div>
+
+                        
+                        <div>
+                            <input type="button" value="AC" class="operator" aria-label="All clear" data-action="all-clear">
+                            <input type="button" value="C" class="operator" aria-label="Clear entry" data-action="clear">
+                            <input type="button" value="DE" class="operator" aria-label="Delete last character" data-action="backspace">
+                            <input type="button" value="." class="operator" aria-label="Decimal point" data-value=".">
+                        </div>
+
+                     
+                        <div>
+                            <input type="button" value="7" aria-label="Seven" data-value="7">
+                            <input type="button" value="8" aria-label="Eight" data-value="8">
+                            <input type="button" value="9" aria-label="Nine" data-value="9">
+                            <input type="button" value="×" class="operator" aria-label="Multiply" data-operator="*">
+                        </div>
+
+                        
+                        <div>
+                            <input type="button" value="4" aria-label="Four" data-value="4">
+                            <input type="button" value="5" aria-label="Five" data-value="5">
+                            <input type="button" value="6" aria-label="Six" data-value="6">
+                            <input type="button" value="−" class="operator" aria-label="Subtract" data-operator="-">
+                        </div>
+
+                      
+                        <div>
+                            <input type="button" value="1" aria-label="One" data-value="1">
+                            <input type="button" value="2" aria-label="Two" data-value="2">
+                            <input type="button" value="3" aria-label="Three" data-value="3">
+                            <input type="button" value="+" class="operator" aria-label="Add" data-operator="+">
+                        </div>
+
+                      
+                        <div>
+                            <input type="button" value="00" aria-label="Double zero" data-value="00">
+                            <input type="button" value="0" aria-label="Zero" data-value="0">
+                            <input type="button" value="=" class="equal operator" aria-label="Equals" data-action="equals">
+                            <input type="button" value="÷" class="operator" aria-label="Divide" data-operator="/">
+                        </div>
+                    </form>
+                </div>
+
+           
+                <div class="tab-content" id="history-view">
+                    <div class="history-header">
+                        <h2>History</h2>
+                        <button class="clear-history-btn" id="clear-history" aria-label="Clear all history">
+                            Clear All
+                        </button>
+                    </div>
+                    <div id="history" class="history" aria-label="Calculation history" role="log" aria-live="polite"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
