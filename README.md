@@ -176,15 +176,6 @@ Change `10` to your desired number of history items.
 
 ---
 
-## 🛠️ Technical Details
-
-### Technologies Used
-
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with CSS variables
-- **Vanilla JavaScript (ES6+)** - No frameworks or libraries
-- **LocalStorage API** - For persistent data storage
-
 ### Browser Compatibility
 
 | Browser | Minimum Version |
@@ -193,29 +184,6 @@ Change `10` to your desired number of history items.
 | Firefox | 55+           |
 | Safari  | 11+           |
 | Edge    | 79+           |
-
-### Key Features Implementation
-
-**Factory Pattern**
-```javascript
-const calculator = createCalculator();
-// Encapsulates state and methods
-```
-
-**LocalStorage Integration**
-```javascript
-localStorage.setItem('calculator-history', JSON.stringify(state.history));
-localStorage.setItem('calculator-theme', theme);
-```
-
-**Event Delegation**
-```javascript
-document.getElementById('calculator-form').addEventListener('click', (e) => {
-    // Handle all button clicks efficiently
-});
-```
-
----
 
 ## 📱 Responsive Design
 
