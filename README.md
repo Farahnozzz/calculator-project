@@ -257,16 +257,6 @@ The calculator automatically adapts to different screen sizes:
 **Adolat Gharibshoeva and Farahnoz Ahmadkhonova**
 ## 📊 Changelog
 
-### Version 1.0.0 (Current)
-- ✅ Basic calculator operations
-- ✅ Dark/Light theme toggle
-- ✅ Persistent history storage
-- ✅ Keyboard support
-- ✅ Responsive design
-- ✅ Accessibility features
-
----
-
 <div align="center">
 
 **Made with ❤️ and ☕**
