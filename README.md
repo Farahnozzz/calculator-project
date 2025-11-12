@@ -255,7 +255,6 @@ The calculator automatically adapts to different screen sizes:
 ## 👨‍💻 Authors
 
 **Adolat Gharibshoeva and Farahnoz Ahmadkhonova**
-## 📊 Changelog
 
 <div align="center">
 
