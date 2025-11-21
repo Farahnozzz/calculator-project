@@ -1,4 +1,3 @@
-// Calculator Factory Function with ES6 features
 const createCalculator = () => {
     // Private state using closure
     let state = {
@@ -398,12 +397,10 @@ document.getElementById('calculator-form').addEventListener('submit', (e) => {
     e.preventDefault();
 });
 
-// Initialize everything on page load
 document.addEventListener('DOMContentLoaded', () => {
     themeManager.init();
     calculator.loadHistoryFromLocalStorage();
     calculator.updateDisplay();
 });
 
-// Development helper - log state (can be removed in production)
 console.log('Calculator initialized with memory save feature');
